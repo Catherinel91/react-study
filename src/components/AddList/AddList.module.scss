@@ -1,0 +1,25 @@
+.addListWrap {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addListInput {
+    width: 50%;
+    height: 30px;
+    margin-right: 50px;
+}
+
+.addListBtn {
+    text-align: center;
+    line-height: 30px;
+    min-width: 100px;
+    padding: 0 10px;
+    cursor: pointer;
+    background: cornflowerblue;
+    &:disabled {
+        background: rgb(209, 208, 208);
+    }
+}

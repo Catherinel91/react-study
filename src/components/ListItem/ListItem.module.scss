@@ -1,0 +1,31 @@
+.listItem {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.listItemCheckbox {
+    cursor: pointer;
+}
+
+.listItemLabel {
+    display: flex;
+}
+
+.listItemText {
+    margin: 0 15px;
+}
+
+.listItemBtnClose {
+    cursor: pointer;
+}
+
+.listItemChecked {
+    text-decoration: line-through;
+}
