@@ -7,14 +7,28 @@
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 
 .container { 
  width: 700px;
+ margin: 0 auto;
+}
+@media (max-width: 1279px) {
+  .container {
+    width: auto;
+    margin: 0 30px;
+  }
+  
+}
+@media (max-width: 766px) {
+  .container {
+    width: auto;
+    margin: 0 15px;
+  }
 }
 
 /***********Loader************/
@@ -65,18 +79,35 @@ body {
 
 body.body{
   display: block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+input,textarea,button,select {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color:  rgb(105, 105, 105);
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .wrapper {
   position: relative;
-  height: 100vh;
+  overflow: hidden;
 }
 
 .main {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 /*start loader*/

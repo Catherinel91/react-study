@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React from "react";
 import { Formik } from "formik";
 import * as yup from 'yup';
@@ -16,7 +17,19 @@ export default function Info() {
         confirmEmail: yup.string().email('введите корректный еmail').oneOf([yup.ref('email')], 'Email не совпадает').required('Обязательное поле')
     })
     return(
-        <>       
+        <form>  
+        {/* <label htmlFor="">
+            <input type="file" onChange={(e) => {
+                // console.log(e.target.files[0]);
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    console.log(e.target.result)
+                }
+                reader.readAsDataURL(e.target.files[0]);
+                
+                }}/>
+        </label>  
+        <button type="submit" ></button>    */}
          
         <Formik
             initialValues={
@@ -115,6 +128,6 @@ export default function Info() {
             </div>)} 
             
         </Formik>
-        </>
+        </form>
     );
 }
