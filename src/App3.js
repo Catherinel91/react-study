@@ -11,6 +11,7 @@ import Info from './componentsApp3/Info/Info';
 import Info2 from './componentsApp3/Info/Info2';
 import Info3 from './componentsApp3/Info/Info3';
 import Info5 from './componentsApp3/Info/Info5';
+import InfoForm from './componentsApp3/Info/InfoForm';
 import Loader from './componentsApp3/Loader/Loader'
 import Modal from './componentsApp3/Modal/Modal';
 import Select from './componentsApp3/Sellect/Select';
@@ -143,7 +144,8 @@ let serchPosts = useEffect(() => {
         </Route> 
         <Route path="/Title3"><Info2/></Route> 
         <Route path="/Title4"><Info3 initCount={5}/></Route> 
-        <Route path="/Form"><Info5 /></Route> 
+        {/* <Route path="/Form"><Info5 /></Route>  */}
+        <Route path="/Form"><InfoForm/></Route> 
         {showModal && <Modal  onCloseModal={onCloseModal}/>}</div></div>
       </Context.Provider>
     </div>
